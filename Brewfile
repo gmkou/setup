@@ -26,8 +26,11 @@ mas "Skitch", id: 425955336
 mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
-mas "カウントダウンタイマー Countdown Timer", id: 1150771803
 cask "android-studio"
 cask "alfred"
 cask "visual-studio-code"
 cask "xmind"
+cask "postman"
+cask "zoom"
+cask "box-tools"
+cask "cleanmymac"
