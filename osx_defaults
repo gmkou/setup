@@ -1,0 +1,33 @@
+# ========== Apprerance ==========
+## auto
+defaults write .GlobalPreferences AppleInterfaceStyleSwitchesAutomatically -bool true
+
+# ========== Hot corner ==========
+## bottom-left : Do not start screen saver
+defaults write com.apple.dock wvous-bl-corner -int 6
+defaults write com.apple.dock wvous-bl-modifier -int 0
+
+## bottom-right : Start screen saver
+defaults write com.apple.dock wvous-br-corner -int 5
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+# ========== Dock ==========
+## size
+defaults write com.apple.dock tilesize -int 64
+
+## position
+defaults write com.apple.dock orientation -string "bottom"
+
+## autohide
+defaults write com.apple.dock autohide -bool true
+
+## animate opening application
+defaults write com.apple.dock launchanim -bool false
+
+## Show indicators for open applications
+defaults write com.apple.dock show-process-indicators -bool true
+
+##  Minimize windows into application icon
+defaults write com.apple.dock minimize-to-application -bool true
+
+killall Dock
