@@ -8,3 +8,4 @@ mas "Prime Video", id: 545519333
 mas "Final Cut Pro", id: 424389933
 mas "Compressor", id: 424390742
 mas "GarageBand", id: 682658836
+cask "zwift"
