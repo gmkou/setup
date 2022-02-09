@@ -9,4 +9,7 @@ source ~/.zshrc
 brew bundle
 
 # macOS defaults
-/bin/bash osx_defaults
+/bin/bash macos_defaults
+
+# vscode extensions
+/bin/bash vscode_extensions

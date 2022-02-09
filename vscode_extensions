@@ -1,0 +1,11 @@
+#install
+code --install-extension fabiospampinato.vscode-diff
+code --install-extension MS-CEINTL.vscode-language-pack-ja
+code --install-extension Compulim.vscode-clock
+code --install-extension KnisterPeter.vscode-github
+code --install-extension ms-python.python
+code --install-extension　golang.go
+code --install-extension　ecmel.vscode-html-css
+
+# uninstall
+code --uninstall-extension ms-vsliveshare.vsliveshare
