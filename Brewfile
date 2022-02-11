@@ -32,5 +32,6 @@ cask "postman"
 cask "zoom"
 cask "box-tools"
 cask "cleanmymac"
+cask "google-chrome"
 mas "Developer", id: 640199958
 mas "Xcode", id: 497799835

@@ -12,3 +12,5 @@ brew bundle
 
 # vscode extensions
 /bin/bash vscode_extensions
+
+/bin/bash dock_clear.sh
