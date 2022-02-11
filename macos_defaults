@@ -1,6 +1,34 @@
+# ========== Keybord modifier ==========
+#defaults -currentHost read  -g   
+#keyboard_vid=$(ioreg -n 'Apple Internal Keyboard' -r | grep -E 'idVendor' | awk '{ print $4 }'); echo ${keyboard_vid}
+#keyboard_pid=$(ioreg -n 'Apple Internal Keyboard' -r | grep -E 'idProduct' | awk '{ print $4 }')
+#keyboardid="${keyboard_vid}-${keyboard_pid}-0"
+## Capls Lock キーを control キーにする．
+#defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboardid} -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771300</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771129</integer></dict>'
+osascript  fix_control_key.scpt 
+read -p "システム環境設定>セキュリティとプライバシ>プライバシー>アクセシビリティ にて、ターミナルからのアプリケーションの制御を許可してください"
+osascript  fix_control_key.scpt 
+
 # ========== Apprerance ==========
 ## auto
 defaults write .GlobalPreferences AppleInterfaceStyleSwitchesAutomatically -bool true
+## Force click
+defaults write .GlobalPreferences com.apple.trackpad.forceClick 0
+defaults write .GlobalPreferences com.apple.trackpad.scaling 1.5
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold 0
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture 2
+defaults write com.apple.AppleMultitouchTrackpad ActuateDetents 0
+defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed 1
+
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture 2
+
+defaults write com.apple.Accessibility KeyRepeatDelay "0.416666666"
+
+defaults write com.apple.Terminal "Default Window Settings" -string "Novel"
+defaults write com.apple.Terminal "Startup Window Settings"  -string "Novel"
+
+defaults write com.crowdcafe.windowmagnet launchAtLogin 1
 
 # ========== Hot corner ==========
 ## bottom-left : Do not start screen saver
